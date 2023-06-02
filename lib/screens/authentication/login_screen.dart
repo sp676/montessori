@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:montessori/utils/colors.dart';
-
 import '../../routes.dart';
+import '../../utils/responsive.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    ScreenSize.init(context); // Initialize screen size variables
     return Scaffold(
       resizeToAvoidBottomInset: true,
       body: ListView(
@@ -15,28 +16,27 @@ class LoginScreen extends StatelessWidget {
           Container(
             color: MyColors.secondaryColor,
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                const SizedBox(
-                  height: 50,
-                ),
                 Visibility(
                   visible: MediaQuery.of(context).viewInsets.bottom == 0,
                   child: Image.asset(
                     'assets/images/logo.jpg',
-                    width: 300,
-                    height: 300,
+                    width: ScreenSize.screenWidth * 0.7,
+                    // height: ScreenSize.screenHeight * 0.4,
                   ),
                 ),
                 Image.asset(
                   'assets/images/children1.jpg',
-                  height: 350,
+                  width: ScreenSize.screenWidth * 0.54,
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.only(top: 8,),
                   child: Container(
-                    padding: const EdgeInsets.all(35),
+                    height: ScreenSize.screenHeight * 0.4,
+                    padding: const EdgeInsets.only(top: 35, left: 35, right: 35),
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(18),
+                      borderRadius: BorderRadius.circular(30),
                       color: Colors.white,
                     ),
                     child: Column(
@@ -110,11 +110,13 @@ class LoginScreen extends StatelessWidget {
                             ),
                           ],
                         ),
-                        const SizedBox(height: 15,),
+                        const SizedBox(
+                          height: 15,
+                        ),
                         const Text(
                           'Forgot Password?',
                           style: TextStyle(color: Colors.blue),
-                        )
+                        ),
                       ],
                     ),
                   ),
