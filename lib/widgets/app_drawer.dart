@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 
+import '../routes.dart';
+
 class AppDrawer extends StatelessWidget {
   const AppDrawer({super.key});
+
+  //  void openDrawer(BuildContext context) {
+  //   Scaffold.of(context).openDrawer();
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +32,7 @@ class AppDrawer extends StatelessWidget {
             title: const Text('Home'),
             onTap: () {
               // Handle home navigation
+              Navigator.pushNamed(context, Routes.home);
             },
           ),
           ListTile(
@@ -33,6 +40,7 @@ class AppDrawer extends StatelessWidget {
             title: const Text('Events'),
             onTap: () {
               // Handle events navigation
+              Navigator.pushNamed(context, Routes.eventDetails);
             },
           ),
           ListTile(
@@ -40,6 +48,7 @@ class AppDrawer extends StatelessWidget {
             title: const Text('Announcements'),
             onTap: () {
               // Handle announcements navigation
+              Navigator.pushNamed(context, Routes.announcements);
             },
           ),
           ListTile(
@@ -47,6 +56,7 @@ class AppDrawer extends StatelessWidget {
             title: const Text('Curriculum'),
             onTap: () {
               // Handle curriculum navigation
+              Navigator.pushNamed(context, Routes.curriculum);
             },
           ),
           ListTile(
@@ -54,6 +64,7 @@ class AppDrawer extends StatelessWidget {
             title: const Text('Profile'),
             onTap: () {
               // Handle profile navigation
+              // Navigator.pushNamed(context, Routes.profile);
             },
           ),
         ],

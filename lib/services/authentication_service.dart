@@ -6,7 +6,7 @@ class AuthenticationService {
     // Example: Authenticate user using email and password
 
     // Simulate login process
-    await Future.delayed(Duration(seconds: 2));
+    await Future.delayed(const Duration(seconds: 2));
 
     // If authentication is successful, return the user object
     return User(email: email, id: '', name: '');
@@ -17,7 +17,7 @@ class AuthenticationService {
     // Example: Clear user session and tokens, navigate to login screen
 
     // Simulate logout process
-    await Future.delayed(Duration(seconds: 2));
+    await Future.delayed(const Duration(seconds: 2));
 
     // Perform any necessary cleanup or clear session/token data
   }

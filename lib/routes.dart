@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:montessori/screens/home/curriculam_screen.dart';
+import 'package:montessori/screens/splash_screen.dart';
 import 'screens/authentication/login_screen.dart';
 import 'screens/authentication/registration_screen.dart';
 import 'screens/home/home_screen.dart';
@@ -11,6 +12,7 @@ import 'screens/messaging/chat_screen.dart';
 import 'screens/messaging/contacts_screen.dart';
 
 class Routes {
+  static const String splash = '/splash';
   static const String login = '/login';
   static const String registration = '/registration';
   static const String home = '/home';
@@ -25,6 +27,7 @@ class Routes {
 
 class AppRoutes {
   static final routes = <String, WidgetBuilder>{
+    Routes.splash: (BuildContext context) => const SplashScreen(),
     Routes.login: (BuildContext context) => const LoginScreen(),
     Routes.registration: (BuildContext context) => const RegisterScreen(),
     Routes.home: (BuildContext context) => const HomeScreen(),
