@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         //   ],
         //   child:
         MaterialApp(
-          debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: false,
       title: 'Montessori App',
       theme: appThemeData,
       initialRoute: Routes.splash,
