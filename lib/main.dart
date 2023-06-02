@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-// import 'package:provider/provider.dart';
 import 'routes.dart';
 import 'theme.dart';
 
@@ -12,15 +11,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return
-        // MultiProvider(
-        //   providers: [
-        //     // Add your providers here
-        //     // Example:
-        //     // ChangeNotifierProvider(create: (_) => Provider()),
-        //   ],
-        //   child:
-        MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Montessori App',
       theme: appThemeData,
