@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:montessori/screens/authentication/forgot_password.dart';
+import 'package:montessori/screens/home/home_screen.dart';
 import 'package:montessori/utils/colors.dart';
-import '../../routes.dart';
 import '../../utils/responsive.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -108,7 +108,8 @@ class LoginScreen extends StatelessWidget {
                                   fixedSize: const Size(100, 25),
                                 ),
                                 onPressed: () {
-                                  Navigator.pushNamed(context, Routes.home);
+                                  // Navigator.pushNamed(context, Routes.eventDetails);
+                                  Get.off(const HomeScreen());
                                 },
                                 child: const Text(
                                   'LOGIN',
