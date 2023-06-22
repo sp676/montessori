@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "846948902240",
+    "project_id": "montessori-1cc0e",
+    "storage_bucket": "montessori-1cc0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846948902240:android:ab2571f70826d7e5686a05",
+        "android_client_info": {
+          "package_name": "com.example.montessori"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846948902240-som1ihgr6bobh2lfkeu39fqnevo0bglk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBO4gX1kwu-uIH2mOt-b-ZhZ1FM5xf4SWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846948902240-som1ihgr6bobh2lfkeu39fqnevo0bglk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

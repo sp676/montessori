@@ -28,8 +28,11 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  cloud_firestore: ^4.7.1
+  cloud_firestore: ^4.8.0
   cupertino_icons: ^1.0.2
+  firebase_auth: ^4.6.2
+  firebase_core: ^2.13.1
+  firebase_storage: ^11.2.2
   flutter:
     sdk: flutter
   flutter_calendar_carousel: ^2.4.2
@@ -86,9 +89,8 @@ flutter:
 flutter_icons:
   image_path: "assets/icons/icon.png"
 
-
 flutter_native_splash:
-  image: assets/images/test.jpg
+  image: assets/images/splash.jpg
   color: "42a5f5"
   fill: true
   android: true
